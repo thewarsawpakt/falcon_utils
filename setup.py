@@ -5,7 +5,7 @@ from setuptools import setup
 
 
 setup(
-    name='falcon-utils',
+    name='falcon_utils',
     version='1.0',
     zip_safe=False,
     include_package_data=True,
