@@ -11,5 +11,6 @@ setup(
     include_package_data=True,
     platforms='any',
     package_dir={'': 'src'},
-    packages=['falcon_utils']
+    py_packages=['falcon'],
+    py_modules=['falcon_utils']
 )
