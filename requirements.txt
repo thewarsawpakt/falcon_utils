@@ -1,0 +1,3 @@
+falcon>=3.*
+gunicorn
+pony~=0.7.16
