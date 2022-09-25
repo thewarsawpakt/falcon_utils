@@ -22,11 +22,6 @@ class JSONMiddleware:
             resp.text = json.dumps(resp.text)
 
 
-def create_app(db, middleware):
-    app = application = falcon.app.App(middleware)
-    db.bind(provider='sqlite', filename=':memory:')
-
+def create_routes(app):
     for route in BaseRoute.__subclasses__():
         route.setup(application)
-
-    return app
